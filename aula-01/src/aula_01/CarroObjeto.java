@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Carro;
+package aula_01;
 
 /**
  *
  * @author getulio
  */
-public class ObjetoCarro {
+public class CarroObjeto {
     public static void main (String args[]) {
 	Carro obj1 = new Carro();
             obj1.ligar();
