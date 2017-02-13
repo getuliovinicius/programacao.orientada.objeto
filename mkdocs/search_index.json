@@ -1,0 +1,54 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Programa\u00e7\u00e3o Orientada a Objeto\n\n\nReposit\u00f3rio no Github\n\n\nAcesse os exerc\u00edcios no Reposit\u00f3rio do Github \nprogramacao.orientada.objeto\n.\n\n\nDescri\u00e7\u00e3o\n\n\nC\u00f3digos desenvolvidos com a Linguagem Java na disciplina de Programa\u00e7\u00e3o Orientada a Objetos do curso de Analise e Desenvolvimento de Sistemas da FATEC de Franca.\n\n\nAluno:\n Getulio Vinicius Teixeira da Silva\n\n\nProfessor:\n Dr. Daniel Facciolo Pires\n\n\nOs exerc\u00edcios foram feitos em sala de aula, laborat\u00f3rio, no 1\u00ba Semestre do ano de 2017 utilizando:\n\n\n\n\n\n\nIDE: Netbeans 8.1;\n\n\n\n\n\n\nJDK: OpenJDK 1.8.0_121;\n\n\n\n\n\n\nSistema Operacional: Ubuntu 16.04 LTS.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#programacao-orientada-a-objeto", 
+            "text": "", 
+            "title": "Programa\u00e7\u00e3o Orientada a Objeto"
+        }, 
+        {
+            "location": "/#repositorio-no-github", 
+            "text": "Acesse os exerc\u00edcios no Reposit\u00f3rio do Github  programacao.orientada.objeto .", 
+            "title": "Reposit\u00f3rio no Github"
+        }, 
+        {
+            "location": "/#descricao", 
+            "text": "C\u00f3digos desenvolvidos com a Linguagem Java na disciplina de Programa\u00e7\u00e3o Orientada a Objetos do curso de Analise e Desenvolvimento de Sistemas da FATEC de Franca.  Aluno:  Getulio Vinicius Teixeira da Silva  Professor:  Dr. Daniel Facciolo Pires  Os exerc\u00edcios foram feitos em sala de aula, laborat\u00f3rio, no 1\u00ba Semestre do ano de 2017 utilizando:    IDE: Netbeans 8.1;    JDK: OpenJDK 1.8.0_121;    Sistema Operacional: Ubuntu 16.04 LTS.", 
+            "title": "Descri\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/lista-1/", 
+            "text": "Lista de Exerc\u00edcios 1\n\n\nClasses \u2013 Objetos \u2013 M\u00e9todos Construtores \u2013 Vari\u00e1veis e M\u00e9todos de inst\u00e2ncia\n\n\nProf. Daniel Facciolo Pires\n\n\nExerc\u00edcio 1:\n\n\n\n\n\n\nCrie uma classe em Java chamada Aluno contendo as vari\u00e1veis de inst\u00e2ncia numeroAluno (int), nome (String), idade (int), p1 (float) e p2 (float),\n\n\n\n\n\n\nCrie o construtor\n\n\n\n\n\n\nCrie os m\u00e9todos notaFinal() - que calcula e retorna a m\u00e9dia final do aluno - , e dadosAluno() - que retorna os valores de numeroAluno, nome e idade.\n\n\n\n\n\n\nCriar uma classe TestaAluno com o m\u00e9todo main() para instancia\u00e7\u00e3o da classe Aluno (atribui\u00e7\u00e3o das vari\u00e1veis de inst\u00e2ncia com quaisquer valores e chamada dos m\u00e9todos notaFinal() e dadosAluno()).\n\n\n\n\n\n\nAdicionar o m\u00e9todo passou() \u00e0 classe Aluno a fim de verificar se o aluno passou. Chame o m\u00e9todo passou() na classe TestaAluno a fim de testa-lo.\n\n\n\n\n\n\nExerc\u00edcio 2:\n\n\n\n\n\n\nCrie uma classe em Java chamada Cliente contendo as vari\u00e1veis de inst\u00e2ncia numeroConta (int), numeroAgencia (int), nome (String) e saldo (float),\n\n\n\n\n\n\nCrie um m\u00e9todo construtor para inicializa\u00e7\u00e3o das vari\u00e1veis quando um objeto da classe for criado.\n\n\n\n\n\n\nCrie os m\u00e9todos public  realizarDeposito() e realizarSaque() que, realizam dep\u00f3sito e saque, respectivamente, na conta do cliente.\n\n\n\n\n\n\nCrie um outro m\u00e9todo public que retorna o numero da conta, nome do cliente e saldo atual.\n\n\n\n\n\n\nCriar uma classe TestaCliente para instancia\u00e7\u00e3o da classe Cliente como Fulano. Chamar os m\u00e9todos realizarDeposito() e realizarSaque() nessa classe para que o saldo seja modificado.\n\n\n\n\n\n\nCriar, tamb\u00e9m na classe TestaCliente, um outro cliente (Beltrano) e realizar as mesmas atividades do Fulano.\n\n\n\n\n\n\nExerc\u00edcio 3\n\n\nImplemente em Java uma classe chamada Produto contendo as vari\u00e1veis id (int), descri\u00e7\u00e3o (String), qtde (int) e preco (float). Essa classe deve possuir os dois m\u00e9todos construtores, com e sem par\u00e2metros, e ainda os m\u00e9todos:\n\n\n\n\n\n\ncomprar(int x): que compra um produto aumentando em x a quantidade em estoque;\n\n\n\n\n\n\nvender(int x): que vende um produto aumentando em x a quantidade em estoque;\n\n\n\n\n\n\nsubir(float x): que aumenta o pre\u00e7o do produto em x unidades;\n\n\n\n\n\n\ndescer(float x): que diminui o pre\u00e7o do produto em x unidades;\n\n\n\n\n\n\nmostra(): que mostra todas as informa\u00e7\u00f5es do produto\n\n\n\n\n\n\nFinalmente, cria uma classe TestaProduto, que cria dois Produtos (cada um deve utilizar um construtor diferente) e teste os m\u00e9todos criados.\n\n\nExerc\u00edcio 4\n\n\nImplemente em Java uma classe chamada Rio contendo as vari\u00e1veis nome(String), n\u00edvel (float) e polu\u00eddo (boolean). Essa classe deve possuir os dois m\u00e9todos construtores, com e sem par\u00e2metros, e ainda os m\u00e9todos:\n\n\n\n\n\n\nchover(float): que aumenta o n\u00edvel atual do rio;\n\n\n\n\n\n\nensolarar(float): que diminui o n\u00edvel atual do rio;\n\n\n\n\n\n\nlimpar(): que limpa o rio;\n\n\n\n\n\n\nsujar(): que polui o rio;\n\n\n\n\n\n\nmostra(): que mostra todas as informa\u00e7\u00f5es do rio.\n\n\n\n\n\n\nFinalmente, cria uma classe TestaRio, que cria dois Rios (cada um deve utilizar um construtor diferente) e teste os m\u00e9todos criados.", 
+            "title": "Lista de exerc\u00edcios 1"
+        }, 
+        {
+            "location": "/lista-1/#lista-de-exercicios-1", 
+            "text": "Classes \u2013 Objetos \u2013 M\u00e9todos Construtores \u2013 Vari\u00e1veis e M\u00e9todos de inst\u00e2ncia  Prof. Daniel Facciolo Pires", 
+            "title": "Lista de Exerc\u00edcios 1"
+        }, 
+        {
+            "location": "/lista-1/#exercicio-1", 
+            "text": "Crie uma classe em Java chamada Aluno contendo as vari\u00e1veis de inst\u00e2ncia numeroAluno (int), nome (String), idade (int), p1 (float) e p2 (float),    Crie o construtor    Crie os m\u00e9todos notaFinal() - que calcula e retorna a m\u00e9dia final do aluno - , e dadosAluno() - que retorna os valores de numeroAluno, nome e idade.    Criar uma classe TestaAluno com o m\u00e9todo main() para instancia\u00e7\u00e3o da classe Aluno (atribui\u00e7\u00e3o das vari\u00e1veis de inst\u00e2ncia com quaisquer valores e chamada dos m\u00e9todos notaFinal() e dadosAluno()).    Adicionar o m\u00e9todo passou() \u00e0 classe Aluno a fim de verificar se o aluno passou. Chame o m\u00e9todo passou() na classe TestaAluno a fim de testa-lo.", 
+            "title": "Exerc\u00edcio 1:"
+        }, 
+        {
+            "location": "/lista-1/#exercicio-2", 
+            "text": "Crie uma classe em Java chamada Cliente contendo as vari\u00e1veis de inst\u00e2ncia numeroConta (int), numeroAgencia (int), nome (String) e saldo (float),    Crie um m\u00e9todo construtor para inicializa\u00e7\u00e3o das vari\u00e1veis quando um objeto da classe for criado.    Crie os m\u00e9todos public  realizarDeposito() e realizarSaque() que, realizam dep\u00f3sito e saque, respectivamente, na conta do cliente.    Crie um outro m\u00e9todo public que retorna o numero da conta, nome do cliente e saldo atual.    Criar uma classe TestaCliente para instancia\u00e7\u00e3o da classe Cliente como Fulano. Chamar os m\u00e9todos realizarDeposito() e realizarSaque() nessa classe para que o saldo seja modificado.    Criar, tamb\u00e9m na classe TestaCliente, um outro cliente (Beltrano) e realizar as mesmas atividades do Fulano.", 
+            "title": "Exerc\u00edcio 2:"
+        }, 
+        {
+            "location": "/lista-1/#exercicio-3", 
+            "text": "Implemente em Java uma classe chamada Produto contendo as vari\u00e1veis id (int), descri\u00e7\u00e3o (String), qtde (int) e preco (float). Essa classe deve possuir os dois m\u00e9todos construtores, com e sem par\u00e2metros, e ainda os m\u00e9todos:    comprar(int x): que compra um produto aumentando em x a quantidade em estoque;    vender(int x): que vende um produto aumentando em x a quantidade em estoque;    subir(float x): que aumenta o pre\u00e7o do produto em x unidades;    descer(float x): que diminui o pre\u00e7o do produto em x unidades;    mostra(): que mostra todas as informa\u00e7\u00f5es do produto    Finalmente, cria uma classe TestaProduto, que cria dois Produtos (cada um deve utilizar um construtor diferente) e teste os m\u00e9todos criados.", 
+            "title": "Exerc\u00edcio 3"
+        }, 
+        {
+            "location": "/lista-1/#exercicio-4", 
+            "text": "Implemente em Java uma classe chamada Rio contendo as vari\u00e1veis nome(String), n\u00edvel (float) e polu\u00eddo (boolean). Essa classe deve possuir os dois m\u00e9todos construtores, com e sem par\u00e2metros, e ainda os m\u00e9todos:    chover(float): que aumenta o n\u00edvel atual do rio;    ensolarar(float): que diminui o n\u00edvel atual do rio;    limpar(): que limpa o rio;    sujar(): que polui o rio;    mostra(): que mostra todas as informa\u00e7\u00f5es do rio.    Finalmente, cria uma classe TestaRio, que cria dois Rios (cada um deve utilizar um construtor diferente) e teste os m\u00e9todos criados.", 
+            "title": "Exerc\u00edcio 4"
+        }
+    ]
+}
