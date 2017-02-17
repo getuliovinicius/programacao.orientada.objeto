@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package aula_01;
+package br.edu.fatecfranca.ads.exe0;
 
 /**
  *
  * @author getulio
  */
+
 public class Carro {
     // Declaracao de variaveis
     public float velAtual;
