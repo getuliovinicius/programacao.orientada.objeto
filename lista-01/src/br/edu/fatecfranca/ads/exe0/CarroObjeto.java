@@ -1,5 +1,7 @@
 package br.edu.fatecfranca.ads.exe0;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author getulio
@@ -8,13 +10,30 @@ package br.edu.fatecfranca.ads.exe0;
 public class CarroObjeto {
 
     public static void main (String args[]) {
-	Carro obj1 = new Carro();
-            obj1.ligar();
-            obj1.acelerar(40);
-	Carro obj2 = new Carro();
-            obj2.ligar();
-            obj2.acelerar(20);
-            obj2.frear(20);
+
+        Carro obj1 = new Carro();
+        System.out.println(obj1.paraString());
+        Carro obj2 = new Carro();
+        Carro obj3 = new Carro();
+        
+        // Carro 1
+        obj1.ligar();
+        System.out.println(obj1.paraString());
+        float aumenta = Float.parseFloat(JOptionPane.showInputDialog("Qto quer aumentar?"));
+        obj1.acelerar(aumenta);
+        System.out.println(obj1.paraString());
+
+        // Carro 2
+        obj2.ligar();
+        JOptionPane.showMessageDialog(null, obj2.paraString());
+        obj2.acelerar(20);
+        obj2.frear(20);
+        JOptionPane.showMessageDialog(null, obj2.paraString());
+        
+        // Carro 3
+        JOptionPane.showMessageDialog(null, obj3.paraString());
+        
+
     }
 
 }
