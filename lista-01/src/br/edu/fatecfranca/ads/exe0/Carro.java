@@ -11,9 +11,9 @@ public class Carro {
     public boolean statusMotor;
 
     // Metodo construtor
-    public Carro() {
-        statusMotor = false;
-        velAtual = 0;
+    public Carro(boolean sm, float va) {
+        statusMotor = sm;
+        velAtual = va;
     }
 	
     // Declaracao de metodos

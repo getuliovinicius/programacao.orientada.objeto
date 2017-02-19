@@ -6,23 +6,44 @@ package br.edu.fatecfranca.ads.exe1;
  */
 
 public class Aluno {
-    // 
+
+    // variaveis de instancia
     public int numeroAluno;
-    public String nome;
-    public int idade;
-    public float p1;
-    public float p2;
+    public String nomeAluno;
+    public int idadeAluno;
+    public float notaP1;
+    public float notaP2;
+    public float media;
    
-    //
-    public float notaFinal (int p1, int p2) {
-        float media = (p1 + p2) / 2;
+    // metodo construtor
+    public Aluno () {
+        numeroAluno = 1;
+        nomeAluno = "João";
+        idadeAluno = 18;
+        notaP1 = 8;
+        notaP2 = 2;
+    }
+    
+    // Retorna a nota final do aluno
+    public float notaFinal () {
+        media = (notaP1 + notaP2) / 2;
         return media;
     }
     
-    //
-//    public String dadosAluno () {
-//        
-//        String dados = 
-//        
-//    } 
+    // Retorna os dados do aluno
+    public String dadosAluno () {
+        return "Número do aluno: " + numeroAluno + " | Nome: " + nomeAluno + " | Idade: " + idadeAluno;
+    }
+    
+    // Checa se o aluno passou
+    public String passou() {
+        
+        notaFinal();
+        
+        if (media >= 6) {
+            return "Passou";
+        } else {
+            return "Não Passou";
+        }
+    }    
 }

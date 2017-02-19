@@ -11,10 +11,10 @@ public class CarroObjeto {
 
     public static void main (String args[]) {
 
-        Carro obj1 = new Carro();
+        Carro obj1 = new Carro(false, 0);
         System.out.println(obj1.paraString());
-        Carro obj2 = new Carro();
-        Carro obj3 = new Carro();
+        Carro obj2 = new Carro(false, 0);
+        Carro obj3 = new Carro(true, 140);
         
         // Carro 1
         obj1.ligar();
