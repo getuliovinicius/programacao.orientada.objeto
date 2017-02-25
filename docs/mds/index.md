@@ -22,6 +22,6 @@ Os exercícios foram feitos em sala de aula, laboratório, no 1º Semestre do an
 
 ## Licença:
 
-[GNU GENERAL PUBLIC LICENSE - Version 3, 29 June 2007](https://github.com/getuliovinicius/classe-usuarios-php/blob/master/LICENSE).
+[GNU GENERAL PUBLIC LICENSE - Version 3, 29 June 2007](https://github.com/getuliovinicius/programacao.orientada.objeto/blob/master/LICENSE).
 
 
