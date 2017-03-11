@@ -1,7 +1,14 @@
 # Lista de Exercícios 1
-**Classes – Objetos – Métodos Construtores – Variáveis e Métodos de instância**
 
-*Prof. Daniel Facciolo Pires*
+Lista de exercícios propostos pelo **Prof. Daniel Facciolo Pires**.
+
++ Classes
++ Objetos
++ Métodos Construtores
++ Variáveis
++ Métodos de instância
+
+Acesse os **[Códigos](https://github.com/getuliovinicius/programacao.orientada.objeto/tree/master/lista-01/src/br/edu/fatecfranca/ads)**.
 
 ## Exercício 1:
 

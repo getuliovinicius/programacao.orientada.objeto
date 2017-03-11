@@ -1,10 +1,14 @@
-# Lista de Exercícios
-# Variáveis de Instância X Variáveis de Classe
-# Métodos de Instância X Métodos de Classe
-# Construtores
-# Prof. Daniel Facciolo Pires
+# Lista de Exercícios 2
 
-##Exercício 1
+Lista de exercícios propostos pelo **Prof. Daniel Facciolo Pires**.
+
++ Variáveis de Instância X Variáveis de Classe
++ Métodos de Instância X Métodos de Classe
++ Construtores
+
+Acesse os **[Códigos](https://github.com/getuliovinicius/programacao.orientada.objeto)**.
+
+## Exercício 1
 
 + Crie uma classe em Java chamada Veiculo contendo as variáveis de instância Tipo (String), nroRodas (int), cor (String) e ano (int), e a variável de classe nomeDono (String);
 
@@ -24,17 +28,17 @@
 
 + Criar a classe TestaVeiculo com as seguintes atividades:
 
-+ + Instanciações da classe Veículo com os objetos Carro e Moto;
+>+ Instanciações da classe Veículo com os objetos Carro e Moto;
 
-+ + Impressão das variáveis dos objetos Carro e Moto (chamado do método mostra());
+>+ Impressão das variáveis dos objetos Carro e Moto (chamado do método mostra());
 
-+ + Modificação do conteúdo de todas as variáveis do objeto Moto; Para alterar o nome do dono, utilize o método específico;
+>+ Modificação do conteúdo de todas as variáveis do objeto Moto; Para alterar o nome do dono, utilize o método específico;
 
-+ + Imprimir novamente as variáveis de instância dos objetos Carro e Moto. O que aconteceu com as variáveis do objeto Carro?
+>+ Imprimir novamente as variáveis de instância dos objetos Carro e Moto. O que aconteceu com as variáveis do objeto Carro?
 
-+ + Mostre o uso do método nroRodas
+>+ Mostre o uso do método nroRodas
 
-+ + Mostre o uso do método retornaNovoVeiculo
+>+ Mostre o uso do método retornaNovoVeiculo
 
 ## Exercício 2
 
