@@ -16,7 +16,7 @@ Acesse os **[Códigos](https://github.com/getuliovinicius/programacao.orientada.
 + Crie um arquivo .jar do seu projeto. Em seguida, crie outro projeto para testar sua classe Cliente. Adicione o .JAR do primeiro projeto nesse segundo projeto;
 + Criar uma classe Teste para instanciação da classe Cliente como Fulano. Chamar os métodos realizarDeposito() e realizarSaque() nessa classe para que o saldo seja modificado. Nao se esqueça de importar a classe Cliente na classe Teste;
 + Tente acessar as variáveis de instância da classe Cliente sem os métodos get e set. O que acontece?
-+ Criar, também na classe teste, um outro cliente (Beltrano) e realizar as mesmas atividades do Fulano. Nao se esqueça de importar a classe Cliente na classe Teste.
++ Criar, também na classe teste, um outro cliente (Beltrano) e realizar as mesmas atividades do Fulano. Não se esqueça de importar a classe Cliente na classe Teste.
 
 ## Exercício 2
 
