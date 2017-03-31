@@ -14,22 +14,22 @@ public class Cliente {
     /** metodos construtores */
 
     public Cliente() {
-        this.numeroConta = "";
-        this.numeroAgencia = "";
+        this.numeroConta = "000000-0";
+        this.numeroAgencia = "0000-0";
         this.nome = "";
         this.saldo = 0;
     }
 
     public Cliente(String numeroConta, String numeroAgencia, String nome, float saldo) {
-        this.numeroConta = numeroConta;
-        this.numeroAgencia = numeroAgencia;
-        this.nome = nome;
+        verificaNumeroConta(numeroConta);
+        verificaNumeroAgencia(numeroAgencia);
+        verificaNome(nome);
         this.saldo = saldo;
     }
     
     /** metodos construtores */
     
-    /** metodos publicos */
+    /** metodos privados */
 
     private void verificaNumeroConta(String numeroConta) {
         
@@ -60,6 +60,10 @@ public class Cliente {
         }
         
     }
+
+    /** metodos privados */
+
+    /** metodos publicos */
 
     public String getNumeroConta() {
         return numeroConta;
