@@ -1,5 +1,7 @@
 package br.edu.fatecfranca.ads.exe2;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author getulio
@@ -42,7 +44,7 @@ public class Aluno {
         if (numeroAluno.length() == 6) {
             this.numeroAluno = numeroAluno;
         } else {
-            throw new IllegalArgumentException("Número de conta inválido.");  
+            throw new IllegalArgumentException("Número do aluno inválido.");  
         }
     }
 
@@ -95,7 +97,7 @@ public class Aluno {
     }
 
     public void setNumeroAluno(String numeroAluno) {
-        this.numeroAluno = numeroAluno;
+        verificaNumeroAluno(numeroAluno);
     }
 
     public String getNome() {
@@ -103,7 +105,7 @@ public class Aluno {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        verificaNome(nome);
     }
 
     public int getIdade() {
@@ -111,7 +113,7 @@ public class Aluno {
     }
 
     public void setIdade(int idade) {
-        this.idade = idade;
+        verificaIdade(idade);
     }
 
     public float getP1() {
@@ -119,7 +121,7 @@ public class Aluno {
     }
 
     public void setP1(float p1) {
-        this.p1 = p1;
+        verificaP1(p1);
     }
 
     public float getP2() {
@@ -127,9 +129,25 @@ public class Aluno {
     }
 
     public void setP2(float p2) {
-        this.p2 = p2;
+        verificaP2(p2);
     }
     
+    public float notaFinal() {
+        return (getP1() + getP2()) / 2;
+    }
+    
+    public String dadosAluno() {
+        return "Numero do Aluno: " + getNumeroAluno() + "\nNome do aluno: " + getNome() + "\nIdade do aluno: " + getIdade();
+    }
+     
+    public String passou() {
+        
+        if (notaFinal() >= 6 ) {
+            return "passou";
+        } else {
+            return "não passou";
+        }
+    }
     /** métodos públicos */
 
 }
