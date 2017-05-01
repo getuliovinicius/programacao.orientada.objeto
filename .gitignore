@@ -21,3 +21,7 @@ hs_err_pid*
 
 # documentacao
 /docs/site/
+
+# outros
+/lista-04/lista-04/build/
+/lista-04/lista-04/dist/

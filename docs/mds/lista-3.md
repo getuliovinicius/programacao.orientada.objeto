@@ -1,12 +1,10 @@
 # Lista de Exercícios 3
-
 Lista de exercícios propostos pelo **Prof. Daniel Facciolo Pires**.
 
 + Encapsulamento
 + Criação de Pacotes
 
 Acesse os **[Códigos](https://github.com/getuliovinicius/programacao.orientada.objeto/tree/master/lista-03/src/br/edu/fatecfranca/ads)**.
-
 
 ## Exercício 1
 
