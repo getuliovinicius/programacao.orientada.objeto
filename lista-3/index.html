@@ -32,7 +32,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-70830801-9', 'getuliovinicius.github.io/programacao.orientada.objeto/');
+      ga('create', 'UA-70830801-9', 'auto');
       ga('send', 'pageview');
   </script>
   
@@ -55,47 +55,43 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Inicio</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Inicio</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../lista-1/">Lista de exercícios 1</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../lista-1/">Lista de exercícios 1</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../lista-2/">Lista de exercícios 2</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../lista-2/">Lista de exercícios 2</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Lista de exercícios 3</a>
-        
-            <ul>
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Lista de exercícios 3</a>
+    <ul class="subnav">
             
-                <li class="toctree-l3"><a href="#lista-de-exercicios-3">Lista de Exercícios 3</a></li>
-                
-                    <li><a class="toctree-l4" href="#exercicio-1">Exercício 1</a></li>
-                
-                    <li><a class="toctree-l4" href="#exercicio-2">Exercício 2</a></li>
-                
-                    <li><a class="toctree-l4" href="#exercicio-extra">Exercício extra</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l2"><a href="#lista_de_exercicios_3">Lista de Exercícios 3</a></li>
+    
+        <ul>
         
-    </li>
-<li>
+            <li><a class="toctree-l3" href="#exercicio_1">Exercício 1</a></li>
+        
+            <li><a class="toctree-l3" href="#exercicio_2">Exercício 2</a></li>
+        
+            <li><a class="toctree-l3" href="#exercicio_extra">Exercício extra</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -132,14 +128,14 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="lista-de-exercicios-3">Lista de Exercícios 3</h1>
+                <h1 id="lista_de_exercicios_3">Lista de Exercícios 3<a class="headerlink" href="#lista_de_exercicios_3" title="Permanent link">&para;</a></h1>
 <p>Lista de exercícios propostos pelo <strong>Prof. Daniel Facciolo Pires</strong>.</p>
 <ul>
 <li>Encapsulamento</li>
 <li>Criação de Pacotes</li>
 </ul>
 <p>Acesse os <strong><a href="https://github.com/getuliovinicius/programacao.orientada.objeto/tree/master/lista-03/src/br/edu/fatecfranca/ads">Códigos</a></strong>.</p>
-<h2 id="exercicio-1">Exercício 1</h2>
+<h2 id="exercicio_1">Exercício 1<a class="headerlink" href="#exercicio_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Crie uma classe em Java chamada Cliente contendo as variáveis de instância private numeroConta (String), numeroAgencia (String), nome (String) e saldo (float), e os métodos getters e setters para todas as variáveis privadas. Para a criação dos métodos setters, o número da conta deve obrigatoriamente ter tamanho 8, contando o traço do dígito verificador. O número da agência deve ter tamanho 6, também contando o traço do dígito verificador. Verificar em ambos os casos a presença do dígito verificador. O nome do cliente não pode ultrapassar 30 caracteres. O saldo da conta não tem restrição;</li>
 <li>Coloque a classe Cliente em um pacote;</li>
@@ -149,7 +145,7 @@
 <li>Tente acessar as variáveis de instância da classe Cliente sem os métodos get e set. O que acontece?</li>
 <li>Criar, também na classe teste, um outro cliente (Beltrano) e realizar as mesmas atividades do Fulano. Não se esqueça de importar a classe Cliente na classe Teste.</li>
 </ul>
-<h2 id="exercicio-2">Exercício 2</h2>
+<h2 id="exercicio_2">Exercício 2<a class="headerlink" href="#exercicio_2" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Crie uma classe em Java chamada Aluno contendo as variáveis de instância private numeroAluno (int), nome (String), idade (int), p1 (float) e p2 (float), e os métodos getters e setters para todas as variáveis privadas. Para a criação dos métodos setters, assuma que: o número do aluno deve ter tamanho exatamente igual a 6. O nome do aluno não pode ultrapassar tamanho 30. A idade, e as notas p1 e p2 não podem ser negativas;</li>
 <li>Coloque a classe Aluno em um pacote;</li>
@@ -159,7 +155,7 @@
 <li>Tente acessar as variáveis de instância da classe Aluno sem os métodos get e set. O que acontece?</li>
 <li>Adicionar o método public passou() à classe Aluno a fim de verificar se o aluno passou. Alterar a classe Teste a fim de testar o método passou().</li>
 </ul>
-<h2 id="exercicio-extra">Exercício extra</h2>
+<h2 id="exercicio_extra">Exercício extra<a class="headerlink" href="#exercicio_extra" title="Permanent link">&para;</a></h2>
 <ul>
 <li>A classe Batedeira controla a utilização de uma batedeira doméstica. A batedeira pode estar ligado ou desligado (1 ou 0), e possuir apenas 4 velocidades de funcionamento (5, 10, 15, 20). As variáveis devem ser de instância e encapsuladas. Assim, responda: <ul>
 <li>Defina a classe Batedeira e suas variáveis;</li>
@@ -206,7 +202,7 @@
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/getuliovinicius/programacao.orientada.objeto" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/getuliovinicius/programacao.orientada.objeto" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href="../lista-2/" style="color: #fcfcfc;">&laquo; Previous</a></span>
