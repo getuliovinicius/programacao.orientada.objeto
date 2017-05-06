@@ -11,7 +11,7 @@ public class Aluno {
     private Curso curso;
 
     /**
-     * Métodos construtores
+     * Construtor vazio
      */
     public Aluno() {
         this.codigo = 0;
@@ -20,6 +20,13 @@ public class Aluno {
         this.curso = new Curso();
     }
 
+    /**
+     * Construtor
+     * @param codigo
+     * @param nome
+     * @param rg
+     * @param curso 
+     */
     public Aluno(int codigo, String nome, String rg, Curso curso) {
         this.codigo = codigo;
         this.nome = nome;
@@ -27,6 +34,15 @@ public class Aluno {
         this.curso = curso;
     }
     
+    /**
+     * Construtor
+     * @param codigo
+     * @param nome
+     * @param rg
+     * @param codigoC
+     * @param nomeC
+     * @param area 
+     */
     public Aluno(int codigo, String nome, String rg, int codigoC, String nomeC, String area) {
         this.codigo = codigo;
         this.nome = nome;
@@ -67,6 +83,10 @@ public class Aluno {
         this.curso = curso;
     }
     
+    /**
+     * mostra
+     * @return 
+     */
     public String mostra() {
         return "Aluno{" + "codigo=" + codigo + ", nome=" + nome + ", rg=" + rg + ", curso=" + curso.mostra() + '}';
     }

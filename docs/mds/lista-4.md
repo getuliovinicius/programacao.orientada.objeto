@@ -1,4 +1,5 @@
 # Lista de Exercícios 4
+
 Lista de exercícios propostos pelo **Prof. Daniel Facciolo Pires**.
 
 + Associação
@@ -7,7 +8,7 @@ Acesse os **[Códigos](https://github.com/getuliovinicius/programacao.orientada.
 
 ## Exercício 1
 
-![Diagrama de Classes](img/lista4-exe1.png)
+![Diagrama de Classes](img/lista4exe1.png)
 
 De acordo com o Diagrama de Classes da UML acima:
 
@@ -24,7 +25,7 @@ De acordo com o Diagrama de Classes da UML acima:
 
 ## Exercício 2
 
-![Diagrama de Classes](img/lista4-exe2.png)
+![Diagrama de Classes](img/lista4exe2.png)
 
 De acordo com o Diagrama de Classes da UML acima, implemente os métodos:
 

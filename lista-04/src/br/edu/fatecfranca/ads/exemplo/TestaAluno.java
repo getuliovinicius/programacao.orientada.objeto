@@ -1,10 +1,12 @@
 package br.edu.fatecfranca.ads.exemplo;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author getulio
  */
-public class Testa {
+public class TestaAluno {
 
     /**
      * @param args the command line arguments
@@ -21,6 +23,8 @@ public class Testa {
         aluno.setCurso(curso);
         aluno.setNome("Juliana");
         aluno.setRg("23456");
+        
+        JOptionPane.showMessageDialog(null, aluno.mostra());
 
     }
     

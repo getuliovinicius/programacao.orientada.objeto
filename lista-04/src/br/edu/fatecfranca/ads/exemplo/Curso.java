@@ -6,14 +6,11 @@ package br.edu.fatecfranca.ads.exemplo;
  */
 public class Curso {
     
-    /**
-     * Variáveis de instância
-     */
     private int codigo;
     private String nome, area;
     
     /**
-     * Métodos construtores
+     * Construtor
      */
     public Curso(){
         this.codigo = 0;
@@ -21,22 +18,22 @@ public class Curso {
         this.area = "";    
     }
 
+    /**
+     * Construtor
+     * @param codigoC
+     * @param nomeC
+     * @param area 
+     */
     Curso(int codigoC, String nomeC, String area) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.codigo = codigoC;
+        this.nome = nomeC;
+        this.area = area;    
     }
 
-    /**
-     * Retorna o código do curso
-     * @return
-     */
     public int getCodigo() {
         return codigo;
     }
 
-    /**
-     * Define o código do curso
-     * @param codigo 
-     */
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
@@ -58,7 +55,7 @@ public class Curso {
     }
     
     /**
-     * Método de instância para retornar os dados associados
+     * mostra
      * @return 
      */
     public String mostra() {
