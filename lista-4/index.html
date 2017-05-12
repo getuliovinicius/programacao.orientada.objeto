@@ -90,6 +90,8 @@
         
             <li><a class="toctree-l3" href="#exercicio_2">Exercício 2</a></li>
         
+            <li><a class="toctree-l3" href="#exercicio_3">Exercício 3</a></li>
+        
         </ul>
     
 
@@ -140,7 +142,7 @@
 <h2 id="exercicio_1">Exercício 1<a class="headerlink" href="#exercicio_1" title="Permanent link">&para;</a></h2>
 <p><img alt="Diagrama de Classes" src="../img/lista4exe1.png" /></p>
 <p>De acordo com o Diagrama de Classes da UML acima:</p>
-<ol>
+<ul>
 <li>Crie as classes Passageiro, Reserva e Vôo, bem como suas variáveis. Todas as variáveis são encapsuladas.</li>
 <li>Crie os métodos construtores sem parâmetro e com parâmetros para todas as classes</li>
 <li>Crie os métodos:<br />
@@ -151,22 +153,18 @@
 <li>Crie um método de instância na classe Reserva que mostra as informações da classe Reserva;</li>
 <li>Crie um método de instância na classe Passageiro que mostra as informações da classe Passageiro;</li>
 <li>Crie uma classe chamada TestaPassageiro que cria instâncias da classe Passageiro, e testa todos os métodos criados nos itens anteriores</li>
-</ol>
+</ul>
 <h2 id="exercicio_2">Exercício 2<a class="headerlink" href="#exercicio_2" title="Permanent link">&para;</a></h2>
 <p><img alt="Diagrama de Classes" src="../img/lista4exe2.png" /></p>
 <p>De acordo com o Diagrama de Classes da UML acima, implemente os métodos:</p>
-<ol>
-<li>
-<p>Passageiro</p>
 <ul>
+<li>Passageiro<ul>
 <li>construtores</li>
 <li>getters e setters</li>
 <li>public String mostra()</li>
 </ul>
 </li>
-<li>
-<p>Onibus</p>
-<ul>
+<li>Onibus<ul>
 <li>construtores</li>
 <li>getters e setters</li>
 <li>public String mostra()</li>
@@ -179,9 +177,7 @@
 <li>public boolean atualizaPassageiro(Passageiro passageiro){</li>
 </ul>
 </li>
-<li>
-<p>Rodoviaria</p>
-<ul>
+<li>Rodoviaria<ul>
 <li>construtores</li>
 <li>getters e setters</li>
 <li>public String mostra()</li>
@@ -198,10 +194,50 @@
 <li>public boolean atualizaPassageiroOnibus(Onibus onibus, Passageiro passageiro)</li>
 </ul>
 </li>
-<li>
-<p>Faça o TestaRodoviaria para chamar os métodos criados na Rodoviária.</p>
+<li>Faça o TestaRodoviaria para chamar os métodos criados na Rodoviária.</li>
+</ul>
+<h2 id="exercicio_3">Exercício 3<a class="headerlink" href="#exercicio_3" title="Permanent link">&para;</a></h2>
+<p><img alt="Diagrama de Classes" src="../img/lista4exe3.png" /></p>
+<p>De acordo com o Diagrama de Classes da UML acima, implemente os métodos:</p>
+<ul>
+<li>Topico<ul>
+<li>construtores</li>
+<li>getters e setters</li>
+<li>public String mostra()</li>
+</ul>
 </li>
-</ol>
+<li>Disciplina<ul>
+<li>construtores</li>
+<li>getters e setters</li>
+<li>public String mostra()</li>
+<li>public void associaTopico(Topico topico){</li>
+<li>public boolean desvincularTopico(Topico topico){</li>
+<li>public boolean obterTopico(Topico topico)</li>
+<li>public boolean obterTopico(String cpf){</li>
+<li>private int obterPosicaoTopicoo(Topico topico){</li>
+<li>private int obterPosicaoTopico(String cpf){</li>
+<li>public boolean atualizaTopico(Topico topico){</li>
+</ul>
+</li>
+<li>Curso<ul>
+<li>construtores</li>
+<li>getters e setters</li>
+<li>public String mostra()</li>
+<li>public void associaDisciplina(Disciplina disciplina){</li>
+<li>public boolean associaTopicoDisciplina(Disciplina disciplina, Topico topico){</li>
+<li>public boolean desvinculaDisciplina(Disciplina disciplina){</li>
+<li>public boolean desvinculaTopicoDisciplina(Disciplina disciplina, Topico topico)</li>
+<li>public boolean obterDisciplina (Disciplina disciplina)</li>
+<li>public boolean obterTopicoDisciplina (Disciplina disciplina, Topico topico)</li>
+<li>public boolean obterDisciplina(int numero)</li>
+<li>private int obterPosicaoDisciplina(Disciplina disciplina)</li>
+<li>private int obterPosicaoDisciplina(int numero)</li>
+<li>public boolean atualizaDisciplina (Disciplina disciplina)</li>
+<li>public boolean atualizaPassageiroOnibus(Disciplina disciplina, Topico topico)</li>
+</ul>
+</li>
+<li>Faça o TestaCurso para chamar os métodos criados no Curso.</li>
+</ul>
               
             </div>
           </div>
