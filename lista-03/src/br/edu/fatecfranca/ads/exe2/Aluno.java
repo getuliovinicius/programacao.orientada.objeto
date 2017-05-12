@@ -1,7 +1,5 @@
 package br.edu.fatecfranca.ads.exe2;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author getulio

@@ -12,16 +12,16 @@ Acesse os **[Códigos](https://github.com/getuliovinicius/programacao.orientada.
 
 De acordo com o Diagrama de Classes da UML acima:
 
-1. Crie as classes Passageiro, Reserva e Vôo, bem como suas variáveis. Todas as variáveis são encapsuladas.
-2. Crie os métodos construtores sem parâmetro e com parâmetros para todas as classes
-3. Crie os métodos:
++ Crie as classes Passageiro, Reserva e Vôo, bem como suas variáveis. Todas as variáveis são encapsuladas.
++ Crie os métodos construtores sem parâmetro e com parâmetros para todas as classes
++ Crie os métodos:
     a) set e get da classe Vôo
     b) set e get da classe Reserva
     c) set e get da classe Passageiro
-4. Crie um método de instância na classe Voo que mostra as informações da classe Voo;
-5. Crie um método de instância na classe Reserva que mostra as informações da classe Reserva;
-6. Crie um método de instância na classe Passageiro que mostra as informações da classe Passageiro;
-7. Crie uma classe chamada TestaPassageiro que cria instâncias da classe Passageiro, e testa todos os métodos criados nos itens anteriores
++ Crie um método de instância na classe Voo que mostra as informações da classe Voo;
++ Crie um método de instância na classe Reserva que mostra as informações da classe Reserva;
++ Crie um método de instância na classe Passageiro que mostra as informações da classe Passageiro;
++ Crie uma classe chamada TestaPassageiro que cria instâncias da classe Passageiro, e testa todos os métodos criados nos itens anteriores
 
 ## Exercício 2
 
@@ -29,14 +29,11 @@ De acordo com o Diagrama de Classes da UML acima:
 
 De acordo com o Diagrama de Classes da UML acima, implemente os métodos:
 
-1. Passageiro
-
++ Passageiro
     + construtores
     + getters e setters
     + public String mostra()
-
-2. Onibus
-
++ Onibus
     + construtores
     + getters e setters
     + public String mostra()
@@ -47,9 +44,7 @@ De acordo com o Diagrama de Classes da UML acima, implemente os métodos:
     + private int obterPosicaoPassageiro(Passageiro passageiro){
     + private int obterPosicaoPassageiro(String cpf){
     + public boolean atualizaPassageiro(Passageiro passageiro){
-
-3. Rodoviaria
-
++ Rodoviaria
     + construtores
     + getters e setters
     + public String mostra()
@@ -64,5 +59,42 @@ De acordo com o Diagrama de Classes da UML acima, implemente os métodos:
     + private int obterPosicaoOnibus(int numero)
     + public boolean atualizaOnibus(Onibus atual, Onibus novo)
     + public boolean atualizaPassageiroOnibus(Onibus onibus, Passageiro passageiro)
++ Faça o TestaRodoviaria para chamar os métodos criados na Rodoviária.
 
-4. Faça o TestaRodoviaria para chamar os métodos criados na Rodoviária.
+## Exercício 3
+
+![Diagrama de Classes](img/lista4exe3.png)
+
+De acordo com o Diagrama de Classes da UML acima, implemente os métodos:
+
++ Topico
+    + construtores
+    + getters e setters
+    + public String mostra()
++ Disciplina
+    + construtores
+    + getters e setters
+    + public String mostra()
+    + public void associaTopico(Topico topico){
+    + public boolean desvincularTopico(Topico topico){
+    + public boolean obterTopico(Topico topico)
+    + public boolean obterTopico(String cpf){
+    + private int obterPosicaoTopicoo(Topico topico){
+    + private int obterPosicaoTopico(String cpf){
+    + public boolean atualizaTopico(Topico topico){
++ Curso
+    + construtores
+    + getters e setters
+    + public String mostra()
+    + public void associaDisciplina(Disciplina disciplina){
+    + public boolean associaTopicoDisciplina(Disciplina disciplina, Topico topico){
+    + public boolean desvinculaDisciplina(Disciplina disciplina){
+    + public boolean desvinculaTopicoDisciplina(Disciplina disciplina, Topico topico)
+    + public boolean obterDisciplina (Disciplina disciplina)
+    + public boolean obterTopicoDisciplina (Disciplina disciplina, Topico topico)
+    + public boolean obterDisciplina(int numero)
+    + private int obterPosicaoDisciplina(Disciplina disciplina)
+    + private int obterPosicaoDisciplina(int numero)
+    + public boolean atualizaDisciplina (Disciplina disciplina)
+    + public boolean atualizaPassageiroOnibus(Disciplina disciplina, Topico topico)
++ Faça o TestaCurso para chamar os métodos criados no Curso.
