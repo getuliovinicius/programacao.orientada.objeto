@@ -24,11 +24,6 @@ public class Venda {
      * Construtor vazio
      */
     public Venda() {
-        this.numero = 0;
-        this.data = new Date();
-        this.valor = 0;
-        this.itens = new ArrayList();
-        
     }
 
     /**

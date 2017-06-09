@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.edu.fatecfranca.ads.exemplo02;
 
 /**
@@ -19,9 +14,6 @@ public class ItemVenda {
     private int qtde;
     
     public ItemVenda () {
-        this.codigo = 0;
-        this.valor = 0;
-        this.qtde = 0;
     }
 
     public ItemVenda(int codigo, float valor, int qtde) {
