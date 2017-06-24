@@ -1,39 +1,72 @@
-# Lista de Abstração, Herança, Polimorfismo, Coersão e Composição
-# Prof. Daniel Pires
+# Lista de Exercícios 6
 
-## 1º Exercício
+Lista de exercícios propostos pelo **Prof. Daniel Facciolo Pires**.
 
-De acordo com o Diagrama de Classes da UML a seguir, responda:
-Obs: os sinais + indicam visibilidade pública, os sinais – indicam visibilidade privada e os sinais # indicam visibilidade protegida
++ Classes Abstrata
 
-![Screenshot](img/fig-02.png)
+Acesse os **[Códigos](https://github.com/getuliovinicius/programacao.orientada.objeto)**.
 
-a. Implemente em Java as classes Passageiro, Classe Standard e Classe Luxo. O método emitePassageiro retorna todas as informações da classe onde este está presente. Não se esqueça de definir os construtores.
+## Exercício 1
 
-b. Implemente em Java a classe Onibus, definindo os métodos construtores.
+Crie uma hierarquia de classes para representar os diferentes tipos de funcionários de um escritório que tem os seguintes cargos: gerente, assistente, vendedor. Escreva uma classe base abstrata chamada Funcionario que declara um método abstrato:
 
-c. Implemente em Java o método criaPassageiroClasseStandard da classe Onibus, que recebe os valores necessários como parâmetro
+```java
+float calculaSalario()
+```
 
-d. Implemente em Java o método obterOnibus da classe Onibus que retorna um Onibus
+Esta classe também deve definir os seguintes atributos:
+- nome (tipo String)
+- matricula (tipo String)
+- salario_base (tipo double).
 
-e. Implemente em Java o método emitePassageiros da classe Onibus, que retorna em uma String as informações de todos os passageiros do onibus
+Use encapsulamento e forneça um construtor que recebe os valores correspondentes a serem armazenados nos respectivos atributos. Esta classe abstrata deverá ser estendida pelas outras classes representativas dos tipos de funcionários,portanto devem ser escritas as classes Gerente, Assistente e Vendedor. Em cada classe deve-se sobrescrever o método calculaSalario de forma que cálculo do salário é feito assim:
 
-f. Implemente em Java a classe Rodoviaria, definindo os construtores.
+- O gerente recebe duas vezes o salário_base
+- O assistente recebe o salário_base
+- O vendedor recebe o salário_base mais uma comissão definida no construtor de sua classe.
 
-g. Implemente em Java o método criaOnibus da classe Rodoviaria, que recebe os valores necessários como parâmetro
+Crie uma classe Teste com um método main que cria um objeto de cada tipo e os armazena em uma lista e depois calcula a folha salarial dos três funcionários e imprime o valor total. Indique quais conceitos de POO você usou e como foi usado.
 
-h. Implemente em Java o método emiteOnibus da classe Rodoviaria, que retorna em uma String as informações de todos os onibus, e para cada onibus, as informações de todos os seus passageiros
+## Exercício 2
 
-i. Implemente em Java o método obterOnibus da classe Rodoviaria, que recebe um número de onibus e retorna este onibus
+Explique os resultados da execução do método `main` abaixo e quais são os conceitos fundamentais de orientação a objetos que são aplicados.
 
-j. Implemente em Java o método criaPassageiroClasseStandardOnibus() da classe Rodoviaria, que recebe os valores necessários como parâmetro
+```java
+public abstract class Ator {
+  public abstract void ato();
+}
 
-k. Suponha que esteja na classe TestaRodoviaria, crie um objeto da classe Rodoviaria e faça chamada aos métodos implementados na mesma
+public class AtorFeliz extends Ator {
+  public void ato() {
+    System.out.println("Ator feliz");
+  }
+}
 
-## 2º Exercício
+public class AtorTriste extends Ator {
+  public void ato() {
+    System.out.println("Ator triste");
+  }
+}
 
-Implemente o Diagrama a seguir em linguagem Java. Em seguida, crie uma classe TestaUniversidade que teste todos os métodos da classe Universidade
+public class Palco {
+  private Ator ator = new AtorFeliz();
+  public void altera() {
+ator = new AtorTriste();
+  }
+  public void atuar() {
+ator.ato();
+  }
+}
 
-![Screenshot](img/fig-03.png)
+public class Programa {
+  public static void main(String[] args) {
+    Palco palco = new Palco();
+    palco.atuar();
+    palco.altera();
+    palco.atuar();
+  }
+}
+```
 
-
+### Exercício 
+Escreva uma classe abstrata chamada CartaoWeb. Essa classe representa todos os tipos de cartões web e conterá apenas um atributo: destinatario (tipo String). Nessa classe você deverá também declarar o método public abstract void showMessage(). Crie classes filhas da classe CartaoWeb: DiaDosNamorados, Natal, Aniversario. Cada uma dessas classes deve conter um método construtor que receba o nome do destinatário do cartão. Cada classe também deve implementar o método showMessage(), mostrando uma mensagem ao usuário com seu nome e que seja específica para a data de comemorativa do cartão. Escreva um programa e no método main crie um array de CartaoWeb. Insira instâncias dos 3 tipos de cartões neste array. Após, use um laço for para exibir as mensagens deste cartão chamando o método showMessage().Em que linha(s) acontece polimorfismo nesse código?

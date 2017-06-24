@@ -13,9 +13,6 @@ public class TestaRodoviaria {
      */
     public static void main(String[] args) {
         
-        Passageiro passageiro = new Passageiro();
-        //passageiro.emitePassageiro(passageiro);
-        
         JOptionPane.showMessageDialog(null, passageiro.emitePassageiro(passageiro));
         
     }

@@ -53,6 +53,5 @@ public class ItemVenda {
     public String mostra() {
         return "ItemVenda{" + "codigo=" + codigo + ", valor=" + valor + ", qtde=" + qtde + '}';
     }
-    
-    
+       
 }
