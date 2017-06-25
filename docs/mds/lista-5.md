@@ -111,8 +111,8 @@ String fala()             // “Muuu...”
 
 ## Exercício 6
 
-+ Faça uma classe Conta que contenha o nome do cliente, salário do clientev, o numero da conta, o saldo e o limite.
-+ Estes valores deverão ser informados no construtor, sendo que o limite nao podera ser maior que o valor do salário mensal do cliente.
++ Faça uma classe Conta que contenha o nome do cliente, salário do cliente, o numero da conta, o saldo e o limite.
++ Estes valores deverão ser informados no construtor, sendo que o limite não podera ser maior que o valor do salário mensal do cliente.
 + Faça um método deposito e um método retira.
 + O método retira ira devolver true ou false, dependendo se o cliente pode retirar.
 + Faça um método saldo que retorne o saldo do cliente.
