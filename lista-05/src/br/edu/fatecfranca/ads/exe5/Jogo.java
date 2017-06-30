@@ -4,14 +4,10 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author getulio
+ * Jogo
  */
 public class Jogo {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
         Coisa usuario = new Coisa();

@@ -1,8 +1,7 @@
 package br.edu.fatecfranca.ads.exe4;
 
 /**
- *
- * @author getulio
+ * Tv
  */
 public class Tv extends Produto {
     

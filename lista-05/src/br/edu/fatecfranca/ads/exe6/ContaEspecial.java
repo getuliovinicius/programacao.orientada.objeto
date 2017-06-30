@@ -1,5 +1,8 @@
 package br.edu.fatecfranca.ads.exe6;
 
+/**
+ * Conta Especial
+ */
 public class ContaEspecial extends Conta {
 
     public ContaEspecial() {

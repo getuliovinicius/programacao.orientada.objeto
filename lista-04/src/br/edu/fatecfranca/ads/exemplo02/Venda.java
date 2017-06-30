@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- *
- * @author getulio
+ * Venda
  */
 public class Venda {
     
@@ -15,19 +14,9 @@ public class Venda {
     /** Vetor dinâmico */
     private ArrayList<ItemVenda> itens;
 
-    /**
-     * Construtor vazio
-     */
     public Venda() {
     }
 
-    /**
-     * Construtor
-     * @param numero
-     * @param data
-     * @param valor
-     * @param itens
-     */
     public Venda(int numero, Date data, float valor, ArrayList<ItemVenda> itens) {
         this.numero = numero;
         this.data = data;
@@ -67,10 +56,6 @@ public class Venda {
         this.itens = itens;
     }
 
-    /**
-     * 
-     * @return 
-     */
     public String mostra() {
         String aux = "Venda{" + "numero=" + numero + ", data=" + data + ", valor=" + valor + ", itens:";
         for (ItemVenda iv: this.itens) {
@@ -80,19 +65,10 @@ public class Venda {
         return aux;
     }
     
-    /**
-     * Create
-     * @param itemVenda
-     */
     public void adicionaItem(ItemVenda itemVenda) {
         this.itens.add(itemVenda); // adiciona no fim
     }
     
-    /**
-     * Update
-     * @param itemNovo
-     * @return 
-     */
     public boolean atualizaItemVenda(ItemVenda itemNovo) {
         int posicao = 0;
         for (ItemVenda iv: this.itens) {
@@ -105,11 +81,6 @@ public class Venda {
         return false;
     }
     
-    /**
-     * Retrive
-     * @param codigo
-     * @return 
-     */
     public ItemVenda buscaItemVenda(int codigo) {
         for (ItemVenda iv: this.itens) {
             if (iv.getCodigo() == codigo) {
@@ -119,29 +90,14 @@ public class Venda {
         return null;
     } 
     
-    /**
-     * Retrive
-     * @param itemVenda
-     * @return 
-     */
     public boolean existeItemVenda(ItemVenda itemVenda) {
         return this.itens.contains(itemVenda);
     }
 
-    /**
-     * Retrive
-     * @param itemVenda
-     * @return 
-     */
     public int posicaoItemVenda(ItemVenda itemVenda) {
         return this.itens.indexOf(itemVenda); // retorna -1 se não encontrar
     }
 
-    /**
-     * Delete
-     * @param itemVenda
-     * @return 
-     */
     public boolean removeItem(ItemVenda itemVenda) {
         return this.itens.remove(itemVenda);
     }

@@ -1,30 +1,18 @@
 package br.edu.fatecfranca.ads.exe1;
 
 /**
- *
- * @author getulio
+ * Passageiro
  */
 public class Passageiro {
     
-    /**
-     * 
-     */
     private String nome;
     private Reserva reserva;
 
-    /**
-     * Método construtor da classe - Cria um objeto vazio
-     */    
     public Passageiro() {
         this.nome = "";
         this.reserva = new Reserva();
     }
 
-    /**
-     * Método construtor da classe
-     * @param nome
-     * @param reserva 
-     */
     public Passageiro(String nome, Reserva reserva) {
         this.nome = nome;
         this.reserva = reserva;
@@ -46,10 +34,6 @@ public class Passageiro {
         this.reserva = reserva;
     }
 
-    /**
-     * 
-     * @return 
-     */
     public String mostra() {
         return "Passageiro: " + this.nome + reserva.mostra();
     }

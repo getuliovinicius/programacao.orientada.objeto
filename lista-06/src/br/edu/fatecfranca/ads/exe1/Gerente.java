@@ -1,5 +1,8 @@
 package br.edu.fatecfranca.ads.exe1;
 
+/**
+ * Gerente
+ */
 public class Gerente extends Funcionario {
 
     public Gerente() {

@@ -1,11 +1,7 @@
 package br.edu.fatecfranca.ads.exemplo02;
 
 /**
- * Item da venda com os seguinte dados:
- * int codigo;
- * float valor;
- * int qtde;
- * @author getulio
+ * ItemVenda
  */
 public class ItemVenda {
     
@@ -46,10 +42,6 @@ public class ItemVenda {
         this.qtde = qtde;
     }
 
-    /**
-     * mostra
-     * @return 
-     */
     public String mostra() {
         return "ItemVenda{" + "codigo=" + codigo + ", valor=" + valor + ", qtde=" + qtde + '}';
     }

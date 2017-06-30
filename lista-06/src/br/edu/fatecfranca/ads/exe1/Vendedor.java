@@ -1,5 +1,8 @@
 package br.edu.fatecfranca.ads.exe1;
 
+/**
+ * Vendedor
+ */
 public class Vendedor extends Funcionario {
     
     private float comissao;

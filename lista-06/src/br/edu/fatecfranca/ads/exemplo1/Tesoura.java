@@ -1,9 +1,5 @@
 package br.edu.fatecfranca.ads.exemplo1;
 
-/**
- *
- * @author getulio
- */
 public class Tesoura extends Coisa {
     
     @Override

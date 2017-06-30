@@ -33,40 +33,54 @@ Explique os resultados da execução do método `main` abaixo e quais são os co
 
 ```java
 public abstract class Ator {
-  public abstract void ato();
+    public abstract void ato();
 }
 
 public class AtorFeliz extends Ator {
-  public void ato() {
-    System.out.println("Ator feliz");
-  }
+    public void ato() {
+        System.out.println("Ator feliz");
+    }
 }
 
 public class AtorTriste extends Ator {
-  public void ato() {
-    System.out.println("Ator triste");
-  }
+    public void ato() {
+        System.out.println("Ator triste");
+    }
 }
 
 public class Palco {
-  private Ator ator = new AtorFeliz();
-  public void altera() {
-ator = new AtorTriste();
-  }
-  public void atuar() {
-ator.ato();
-  }
+    private Ator ator = new AtorFeliz();
+    public void altera() {
+        ator = new AtorTriste();
+    }
+    public void atuar() {
+        ator.ato();
+    }
 }
 
 public class Programa {
-  public static void main(String[] args) {
-    Palco palco = new Palco();
-    palco.atuar();
-    palco.altera();
-    palco.atuar();
-  }
+    public static void main(String[] args) {
+        Palco palco = new Palco();
+        palco.atuar();
+        palco.altera();
+        System.out.print();alco.atuar();
+    }
 }
 ```
 
-### Exercício 
-Escreva uma classe abstrata chamada CartaoWeb. Essa classe representa todos os tipos de cartões web e conterá apenas um atributo: destinatario (tipo String). Nessa classe você deverá também declarar o método public abstract void showMessage(). Crie classes filhas da classe CartaoWeb: DiaDosNamorados, Natal, Aniversario. Cada uma dessas classes deve conter um método construtor que receba o nome do destinatário do cartão. Cada classe também deve implementar o método showMessage(), mostrando uma mensagem ao usuário com seu nome e que seja específica para a data de comemorativa do cartão. Escreva um programa e no método main crie um array de CartaoWeb. Insira instâncias dos 3 tipos de cartões neste array. Após, use um laço for para exibir as mensagens deste cartão chamando o método showMessage().Em que linha(s) acontece polimorfismo nesse código?
+### Exercício 3
+
++ Escreva uma classe abstrata chamada CartaoWeb.
++ Essa classe representa todos os tipos de cartões web e conterá apenas um atributo:
+    - destinatario (tipo String).
++ Nessa classe você deverá também declarar o método public abstract void showMessage().
++ Crie classes filhas da classe CartaoWeb:
+    - DiaDosNamorados
+    - Natal
+    - Aniversario.
++ Cada uma dessas classes deve conter um método construtor que receba o nome do destinatário do cartão.
++ Cada classe também deve implementar o método showMessage(), mostrando uma mensagem ao usuário com seu nome e que seja específica para a data de comemorativa do cartão.
++ Escreva um programa e no método main crie um array de CartaoWeb.
++ Insira instâncias dos 3 tipos de cartões neste array.
++ Após, use um laço for para exibir as mensagens deste cartão chamando o método showMessage().
++ Em que linha(s) acontece polimorfismo nesse código?

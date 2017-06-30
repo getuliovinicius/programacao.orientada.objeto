@@ -1,33 +1,35 @@
 package br.edu.fatecfranca.ads.exe1;
 
+/**
+ * TestaPessoa
+ */
 public class TestaPessoa {
 
     public static void main(String[] args) {
         
         Pessoa pessoa = new Pessoa();
-        pessoa.come();
-        pessoa.respira();
-        pessoa.vota();
-        pessoa.getRg();
-        pessoa.pagaIR();
-        pessoa.getCpf();
-        pessoa.trabalha();
-        pessoa.ensina();
+        System.out.println(pessoa.come());
+        System.out.println(pessoa.respira());
+        System.out.println(pessoa.vota());
+        System.out.println(pessoa.getRg());
+        System.out.println(pessoa.pagaIR());
+        System.out.println(pessoa.getCpf());
+        System.out.println(pessoa.trabalha());
+        System.out.println(pessoa.ensina());
         
         Cidadao cidadao = new Pessoa();
-        pessoa.vota();
-        pessoa.getRg();
+        System.out.println(cidadao.vota());
+        System.out.println(cidadao.getRg());
 
         Contribuinte contribuinte = new Pessoa();
-        pessoa.pagaIR();
-        pessoa.getCpf();        
+        System.out.println(contribuinte.pagaIR());
+        System.out.println(contribuinte.getCpf());
         
         Empregado empregado = new Pessoa();
-        pessoa.trabalha();
+        System.out.println(empregado.trabalha());
 
         Professor professor = new Pessoa();
-        pessoa.ensina();        
-
+        System.out.println(professor.ensina());
     }
     
 }

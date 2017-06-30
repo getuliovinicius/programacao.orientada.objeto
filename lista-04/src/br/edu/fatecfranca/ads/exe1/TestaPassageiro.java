@@ -3,14 +3,10 @@ package br.edu.fatecfranca.ads.exe1;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author getulio
+ * TestaPassageiro
  */
 public class TestaPassageiro {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
         /** Voo 1 */

@@ -3,6 +3,9 @@ package br.edu.fatecfranca.ads.exe1;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
+/**
+ * TestaFuncionario
+ */
 public class TestaFuncionario {
 
     public static void main(String[] args) {
@@ -16,9 +19,9 @@ public class TestaFuncionario {
         funcionarios.add(assistente);
         funcionarios.add(vendedor);
         
-        for (Funcionario funcionario: funcionarios) {
+        funcionarios.forEach((funcionario) -> {
             JOptionPane.showMessageDialog(null, funcionario.toString() + "\nSalário: " + funcionario.calculaSalario());
-        }
+        });
         
     }
     

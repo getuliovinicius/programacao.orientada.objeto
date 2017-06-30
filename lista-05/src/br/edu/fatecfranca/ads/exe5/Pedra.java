@@ -1,8 +1,7 @@
 package br.edu.fatecfranca.ads.exe5;
 
 /**
- *
- * @author getulio
+ * Pedra
  */
 public class Pedra extends Coisa {
 

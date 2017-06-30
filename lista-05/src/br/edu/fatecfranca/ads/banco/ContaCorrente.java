@@ -1,37 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.edu.fatecfranca.ads.banco;
 
 /**
- *
- * @author getulio
+ * ContaCorrente
  */
 public class ContaCorrente {
     
-    /**
-     * 
-     */
     protected String banco, numero;
     protected float saldo;
 
-    /**
-     * 
-     */
     public ContaCorrente() {
         this.banco = "";
         this.numero = "";
         this.saldo = 0;
     }
 
-    /**
-     * 
-     * @param banco
-     * @param numero
-     * @param saldo 
-     */
     public ContaCorrente(String banco, String numero, float saldo) {
         this.banco = banco;
         this.numero = numero;

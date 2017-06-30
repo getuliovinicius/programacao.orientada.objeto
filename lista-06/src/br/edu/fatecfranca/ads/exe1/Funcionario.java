@@ -1,5 +1,8 @@
 package br.edu.fatecfranca.ads.exe1;
 
+/**
+ * Funcionario
+ */
 public abstract class Funcionario {
     protected String nome, matricula;
     protected float salarioBase;

@@ -1,5 +1,8 @@
 package br.edu.fatecfranca.ads.exe6;
 
+/**
+ * Conta
+ */
 public class Conta {
     
     protected String nomeCliente;

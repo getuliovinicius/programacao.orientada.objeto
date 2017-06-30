@@ -1,5 +1,8 @@
 package br.edu.fatecfranca.ads.exe6;
 
+/**
+ * Cartao
+ */
 public class Cartao {
     
     private Conta conta;

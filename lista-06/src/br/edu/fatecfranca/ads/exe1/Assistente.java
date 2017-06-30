@@ -1,5 +1,8 @@
 package br.edu.fatecfranca.ads.exe1;
 
+/**
+ * Assistente
+ */
 public class Assistente extends Funcionario {
 
     public Assistente() {

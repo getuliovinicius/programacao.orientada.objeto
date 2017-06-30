@@ -8,9 +8,8 @@ public class Papel extends Coisa {
     }
     
     @Override
-    public String compara (Coisa c) {
-        
-        String aux = c.quemSouEu();
+    public String compara(Coisa coisa) {
+        String aux = coisa.quemSouEu();
         
         switch (aux) {
             case "Papel": return "Papel empata Papel";
@@ -18,7 +17,6 @@ public class Papel extends Coisa {
             case "Tesoura": return "Papel perde Tesoura";
             default: return "Impossível comparar";
         }
-        
     }
     
 }

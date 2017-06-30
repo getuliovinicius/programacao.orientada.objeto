@@ -3,14 +3,10 @@ package br.edu.fatecfranca.ads.exemplo;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author getulio
+ *  TestaAluno
  */
 public class TestaAluno {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 
         Curso curso = new Curso();

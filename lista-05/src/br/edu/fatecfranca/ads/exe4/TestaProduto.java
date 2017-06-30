@@ -3,8 +3,7 @@ package br.edu.fatecfranca.ads.exe4;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author getulio
+ * TestaProduto
  */
 public class TestaProduto {
     
@@ -12,9 +11,6 @@ public class TestaProduto {
         JOptionPane.showMessageDialog(null, prod.toString());
     }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 
         Radio radio = new Radio("FM", 101.3f, 123, 456);

@@ -3,23 +3,14 @@ package br.edu.fatecfranca.ads.exe1_exe2_exe3;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author getulio
+ * TestaZoologico
  */
 public class TestaZoologico {
     
-    /**
-     * 
-     * @param animal 
-     */
     public static void mostraInfoEFala(Animal animal) {
         JOptionPane.showMessageDialog(null, animal.mostraInfo() + "\n" + animal.fala());
     }
-    
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
         Animal animal = new Animal("animal");

@@ -3,8 +3,7 @@ package br.edu.fatecfranca.ads.exe4;
 import java.util.Random;
 
 /**
- *
- * @author getulio
+ * Produto
  */
 public class Produto {
     

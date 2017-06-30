@@ -1,8 +1,7 @@
 package br.edu.fatecfranca.ads.exe4;
 
 /**
- *
- * @author getulio
+ * Radio
  */
 public class Radio extends Produto {
 
@@ -41,7 +40,5 @@ public class Radio extends Produto {
     public String toString() {
         return super.toString() + "\nRÁDIO" + "\nBanda: " + this.banda + "\nEstacao: " + this.estacao;
     }
-    
-    
     
 }
